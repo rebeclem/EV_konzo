@@ -1,8 +1,7 @@
 # Working Pipeline for Vilain's group
 # Part 2 : QA with FastQC
 
-__*This step is assessing the quality of your raw NGS sequencing reads.*__
-
+### __This step is assessing the quality of your raw NGS sequencing reads.__
 <br />
 
 You need to be within the Analysis folder. 
@@ -10,7 +9,7 @@ You need to be within the Analysis folder.
 cd Analysis
 ```
 
-Call fastqc on the raw sequence files.
+Call FastQC on the raw sequence files.
 ```
 module load fastqc
 for f in Konzo*; do
@@ -32,16 +31,26 @@ The `html` files are the ones that we are interested in. We're going to move all
 mkdir -p fastqc_raw
 mv Konzo*/Konzo*.html fastqc_raw/
 ```
-Now download that folder to your computer with the command:
+Now download that folder to your computer with the command. This command needs to be excuted on your local computer (not within colonial one). I recommend opening up another tab on your terminal and then executing this command:
 ```
+scp your_username@login.colonialone.edu:path/to/Analysis/fastqc_raw /local/dir
 ```
+>  You will need to replace a few things. As an example for you, I have used my path and username.
+>  | your_username | path/to/Analysis | local/dir |
+>  | --- | --- | --- |
+>  | kmgibson | /lustre/EV_konzo/Analysis | ~/Documents/EVKonzo |
+
+<br />
+<br />
+
 All of the files can be opened up through Safari/Chrome/etc. (whatever internet browser you use). If you open the downloaded folder in your Finder (if on mac), you can select a file (so it is highlighted) and press the *space* button. A temporary window should show up with your results. Now you can press the *down arrow* and scroll through all the files relatively quickly.
 
-See this [PDF]() explaining the FastQC results or this [website by the creators of FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) that also has explaination of the resuts. 
+See this [PDF](https://github.com/kmgibson/EV_konzo/blob/master/FastQC_Manual.pdf) explaining the FastQC results or this [website by the creators of FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) that also has explaination of the results. 
+- The PDF was downloaded from the [University of Missouri sequencing core](https://dnacore.missouri.edu).
 
 <br />
 
-Removed unncessary files:
+Finally, we need to remove unncessary files:
 ```
 rm Konzo*/Konzo*_R?_fastqc.zip
 ```
