@@ -11,6 +11,7 @@ cd Analysis
 
 Call FastQC on the raw sequence files.
 ```
+module use /groups/cbi/shared/modulefiles
 module load fastqc
 for f in Konzo*; do
     fastqc -o $f -f $f/fastq ${f}_R1.fastq.gz $f/${f}_R2.fastq.gz
@@ -77,6 +78,7 @@ cd Analysis
 
 Call FastQC on the cleaned sequence files.
 ```
+module use /groups/cbi/shared/modulefiles
 module load fastqc
 for f in Konzo*; do
     fastqc -o $f -f fastq $f/flexcleaned_1.fastq $f/flexcleaned_2.fastq
