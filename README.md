@@ -31,9 +31,12 @@ For helpful resources in understanding the output from FastQC, see this helpful 
 Follow [`QC.md`](https://github.com/kmgibson/EV_konzo/blob/master/QC.md) instructions.
 <br />
 
+Before we can use PathoScope to map our reads to genomes, we first need to "clean" our reads. Now, we call it cleaning because here we remove low quality reads, low quality nucleotides, and any adapter sequences that were left behind by the Illumina processing software. This step is also referred to as trimming our reads.
+
+
 ---
 ## Part 4 : QA with FastQC
-Repeat part 2 with [`QA.md`](https://github.com/kmgibson/EV_konzo/blob/master/QA.md) instructions.
+Basically repeat part 2 with [`QA.md`](https://github.com/kmgibson/EV_konzo/blob/master/QA.md) instructions.
 <br />
 This time you will be checking the quality *after* trimming (cleaning) the reads.
 

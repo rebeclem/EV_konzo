@@ -16,11 +16,11 @@ echo $name
 module load flexbar/3.0.3
 
 flexbar --threads 10 \
- --adapters NexteraPE-PE.fa \
+ --adapters refs/adapters_PE.fa \
  --adapter-trim-end RIGHT \
  --adapter-min-overlap 7 \
  --pre-trim-left 5 \
- --max-uncalled 300 \
+ --max-uncalled 100 \
  --min-read-length 25 \
  --qtrim TAIL \
  --qtrim-format sanger \
