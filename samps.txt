@@ -87,6 +87,5 @@ Konzo86
 Konzo87
 Konzo88
 Konzo89
-Konzo9
 Konzo90
 Konzo-control
