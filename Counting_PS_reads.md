@@ -88,6 +88,7 @@ done
 2. `reads_bac.txt`
 
 Which both have the format of:
+
 | Samp | Reads |
 | --- | --- |
 | Konzo01 | 1302387 |
