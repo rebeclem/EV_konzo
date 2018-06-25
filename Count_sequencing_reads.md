@@ -20,7 +20,7 @@ done
 ```
 <br />
 
-You will need to edit this file in excel prior to using it in R. See the file: [`EVKonzo_readcount.csv`](https://github.com/kmgibson/EV_konzo/blob/master/EVKonzo_readcount.csv)
+You will need to edit the `read_count.txt` file in excel prior to using it in R. See the file: [`EVKonzo_readcount.csv`](https://github.com/kmgibson/EV_konzo/blob/master/EVKonzo_readcount.csv). Basically you need to stack the "cleaned" reads below the raw.
 
 Format needs to be as such:<br />
 
