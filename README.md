@@ -63,6 +63,12 @@ Here you are assessing how many reads you started with (raw read count) and how 
 ---
 ## Part 6 : PathoScope
 
+Follow [`Pathoscope.md`](https://github.com/kmgibson/EV_konzo/blob/master/Pathoscope.md) instructions.
+
+Now we're getting to the fun part where we map the sample reads against databases. 
+To see a list of all the available databases we can map to go to [CBI's reference databses](https://github.com/gwcbi/cbi_reference_databases).
+
+See the github page for [`Pathoscope`](https://github.com/PathoScope/PathoScope) for more information as well. We will only be using the `MAP` and `ID` modules.
 
 ---
 ## Part 7 : Count number of mapped reads
@@ -78,4 +84,9 @@ Here we are counting the number of reads that mapped to the human genome and the
 
 
 ----
-## Part  : Visualizing Results with R.
+## Part 8 : Visualizing Results with R.
+
+
+This is where the exciting part comes! Follow [`R_analysis.md`](https://github.com/kmgibson/EV_konzo/blob/master/R_analysis.md) instructions.
+
+Here we will visualize the results from Flexbar and PathoScope. We will also complete some statistics.
