@@ -19,6 +19,13 @@ These are the bash scripts I used to set up the directories and working structur
 Follow [`QA.md`](https://github.com/kmgibson/EV_konzo/blob/master/QA.md) instructions.
 <br />
 
+Here, we will be checking the quality of the *raw* reads, i.e. the reads coming off the sequencer. We want to look at the quality of the begining nucleotides (10bp) and the ending nucleotides, if any samples failed*, duplication level (which should be low in metagenomic samples), and anything else that needs to be addressed in Part 3 with Flexbar. The results from this first run with FastQC will provide us with the trimming parameters we need to use in Part 3. 
+
+For helpful resources in understanding the output from FastQC, see this helpful [PDF](https://github.com/kmgibson/EV_konzo/blob/master/FastQC_Manual.pdf) provided by the [University of Missouri](https://dnacore.missouri.edu) or see the [creators of FastQC's website](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
+
+>*This is important for this project, because you'll see that samples 54 and 88 failed. Their quality charts were all over the place, and you'll notice at the top that they both had <500 reads total. 
+
+
 ---
 ## Part 3 : QC with Flexbar
 Follow [`QC.md`](https://github.com/kmgibson/EV_konzo/blob/master/QC.md) instructions.
@@ -36,7 +43,7 @@ _**This step assesses how successful you were on Part 3 with flexbar.**_
 
 ---
 ## Part 5 : Count number of raw and cleaned reads
-Follow [`Count_reads.md`](https://github.com/kmgibson/EV_konzo/blob/master/Count_reads.md) instructions.
+Follow [`Count_sequencing_reads.md`](https://github.com/kmgibson/EV_konzo/blob/master/Count_sequencing_reads.md) instructions.
 <br />
 Here you are assessing how many reads you started with (raw read count) and how many reads remained after cleaning.
 
@@ -56,7 +63,7 @@ Here you are assessing how many reads you started with (raw read count) and how 
 
 ---
 ## Part 7 : Count number of mapped reads
-Follow [`Counting_PS_reads.md`](https://github.com/kmgibson/EV_konzo/blob/master/Count_sequencing_reads.md) instructions.
+Follow [`Counting_PS_reads.md`](https://github.com/kmgibson/EV_konzo/blob/master/Counting_PS_reads.md) instructions.
 
 Here we are counting the number of reads that mapped to the human genome and the number of reads that mapped to the bacterial databases we used. This will give us our read ratio between human : bacteria. This will also give us the number of reads that were unmapped, i.e. reads that did not map to any genome in our database set. 
 
