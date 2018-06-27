@@ -4,6 +4,7 @@
 *.csv
 *.docx
 *.zip
+*.html
 KONZO_to_EV_group
 Visualization
 .Rhistory
