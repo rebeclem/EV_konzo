@@ -3,4 +3,5 @@ Visualization
 .DS_Store
 EVKonzo_metadata.csv
 PS_read_counts.csv
+*.png
 !.gitignore
