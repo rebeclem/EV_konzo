@@ -12,12 +12,11 @@
     - Created in Part 7 by counting number of mapped reads.
 - `EVKonzo_metadata.csv`
     - List of all the sample names with their corresponding group.
+    - This file should be in this format:
+| Samp | Group |
+| --- | --- |
+| Konzo01 | Kinshasa Control |
 
->This file should be in this format:
->| Samp | Group |
->| --- | --- |
->| Konzo01 | Kinshasa Control |
->
 
 - `pathoscope_output` directory with all of the `tsv` files.
 
