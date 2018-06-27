@@ -44,4 +44,4 @@ You will need to do this for all the packages that you don't have.
 ---
 
 ## Yay! You've completed analysis for your project!
-![alt text](Excellent_bitmoji.png)
+![alt text](https://github.com/kmgibson/helpful/blob/master/Excellent_bitmoji.png)
