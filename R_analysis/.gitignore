@@ -1,3 +1,10 @@
+*.jpg
+*.pdf
+*.txt
+*.csv
+*.docx
+*.zip
+KONZO_to_EV_group
 Visualization
 .Rhistory
 .DS_Store
