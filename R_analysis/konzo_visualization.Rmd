@@ -114,8 +114,6 @@ patho.tax_mat <- matrix(data = NA, nrow=dim(patho.otu_mat)[1], ncol=length(ranks
 
 rownames(patho.tax_mat) <- rownames(patho.otu_mat)
 colnames(patho.tax_mat) <- ranks
-
-setwd("/Users/keyliegibson/Desktop/GitHub_Projects/EV_konzo")
 ```
 
 ## Fetching Taxonomic Names from TaxonID
@@ -295,6 +293,7 @@ ggsave("PS.by_species.pdf", patho.by_species_plot)
 # FMT Stats (Alpha & Beta Diversity)
 ## Load appropriate packages
 ```{load stat packages}
+
 library("devtools")
 library("picante")
 library("TSA")
@@ -304,13 +303,13 @@ library("car")
 library("microbiome")
 library("mvabund")
 library("MASS")
-library("FSA")
 library("geepack")
 library("doBy")
 library("lattice")
 library("MuMIn")
 library("phangorn")
 library("DESeq2")
+library("FSA")
 ```
 
 
@@ -338,7 +337,6 @@ taxa_names(pathoscope.phy)[1:10]
 sample_variables(pathoscope.phy)[1:3]
 rank_names(pathoscope.phy)
 get_taxa_unique(pathoscope.phy, "class")
-
 ```
 
 
@@ -546,6 +544,7 @@ capture.output(anova(lm_fish), append=TRUE, file="adiv_lm.txt")
 
 ## Anova Tests for all
 ```{adiv anova all}
+
 adiv_simp <- aov(Simpson~Group_f,data=diversity)
 summary(adiv_simp)
 capture.output(summary(adiv_simp), file="alpha_div.txt") 
@@ -742,6 +741,7 @@ dev.off()
 ---
 ## Beta Diversity Stats for just the Kahemba Village
 ```{Stats with just Kahemba Village}
+
 # remove the control and all Kinshasa samples
 konzo.phy <- prune_samples(colnames(pathoscope.phy@otu_table@.Data)!= "Konzo-control", pathoscope.phy)
 Kahemba.phy = subset_samples(konzo.phy, konzo.phy@sam_data$Group != 'Kinshasa Control')
