@@ -72,6 +72,7 @@ See the github page for [`Pathoscope`](https://github.com/PathoScope/PathoScope)
 
 ---
 ## Part 7 : Count number of mapped reads
+
 Follow [`Counting_PS_reads.md`](https://github.com/kmgibson/EV_konzo/blob/master/Counting_PS_reads.md) instructions.
 
 Here we are counting the number of reads that mapped to the human genome and the number of reads that mapped to the bacterial databases we used. This will give us our read ratio between human : bacteria. This will also give us the number of reads that were unmapped, i.e. reads that did not map to any genome in our database set. 
@@ -90,3 +91,17 @@ Here we are counting the number of reads that mapped to the human genome and the
 This is where the exciting part comes! Follow [`R_analysis.md`](https://github.com/kmgibson/EV_konzo/blob/master/R_analysis.md) instructions.
 
 Here we will visualize the results from Flexbar and PathoScope. We will also complete some statistics.
+
+
+----
+## Part 9 : Functional Analysis with HuMANN2
+
+Follow [`humann2.md`](https://github.com/kmgibson/EV_konzo/blob/master/humann2.md) instructions.
+
+Here we will complete functional analysis on the whole shotgun metagenomic reads. We will get a list of pathways and GO terms.
+
+
+HUMAnN2: The HMP Unified Metabolic Analysis Network 2
+<br/>
+See [general overview here](http://huttenhower.sph.harvard.edu/humann2), [manual here](https://bitbucket.org/biobakery/humann2/wiki/Home) and a [tutorial here](https://bitbucket.org/biobakery/biobakery/wiki/humann2).
+
