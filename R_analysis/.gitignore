@@ -5,6 +5,13 @@
 *.docx
 *.zip
 *.html
+global.r
+methods.r
+plots.r
+server.r
+shiny.r
+ui.r
+www
 KONZO_to_EV_group
 Visualization
 .Rhistory
