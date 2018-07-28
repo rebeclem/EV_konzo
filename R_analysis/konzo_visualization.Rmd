@@ -943,6 +943,8 @@ dev.off()
 
 ---
 ---
+<br />
+
 ## Beta Diversity Stats for just the Kahemba Village
 ```{Stats with just Kahemba Village}
 
@@ -1016,6 +1018,7 @@ bdiv_chao_K <- adonis(chaod ~ diversity$Group_f, perm=10000); bdiv_chao_K
 capture.output(bdiv_chao_K, append=TRUE, file="Kahemba_bdiv_adonis.txt") 
 ```
 
+---
 ---
 ## Merged Beta diversity
 ```{merged beta div}
@@ -1117,8 +1120,11 @@ multiplot(observed2, chao2, shan2, ACE2,Simpson2,Fisher2,cols=3)  #### to run th
 dev.off()
 ```
 
+---
+---
+<br />
 
-## Sankey Plot
+# Sankey Plot
 ```{r sankey plot}
 
 #install.packages("shinythemes")
@@ -1140,8 +1146,11 @@ sankey
 
 ```
 
+---
+---
+<br />
 
-## Alluvial Plot
+# Alluvial Plot
 ```{alluvial plot}
 
 # Setup
